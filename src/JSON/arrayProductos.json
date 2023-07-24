@@ -5,7 +5,7 @@
 {"id":4, "motor": 39, "imagen": "/asets/DSX650.jpeg", "description":"barro", "name":"VOGE DSX 650", "price":5238001, "stock":18, "category":"touring"},
 {"id":5, "motor": 98, "imagen": "/asets/VER650.jpeg", "description":"barro", "name":"KAWASAKI VERSYS 650", "price":12590480, "stock":6, "category":"touring"},
 {"id":6, "motor": 47, "imagen": "/asets/TRACER7.jpeg", "description":"barro", "name":"YAMAHA MT 07 TRACER", "price":988000, "stock":3, "category":"touring"},
-{"id":7, "motor": 58, "imagen": "/asets/SYM6.jpeg", "description":"barro", "name":"SYM MAXSYM 600L", "price":6134100, "stock":30, "category":"scooter"},
+{"id":7, "motor": 58, "imagen": "/asets/SYM5.jpeg", "description":"barro", "name":"SYM MAXSYM TL 508", "price":6134100, "stock":30, "category":"scooter"},
 {"id":8, "motor": 26, "imagen": "/asets/GTS3.jpeg", "description":"barro", "name":"VESPA GTS 300", "price":6760000, "stock":12, "category":"scooter"},
 {"id":9, "motor": 46, "imagen": "/asets/C650.jpeg", "description":"barro", "name":"BMW C650 SPORT", "price":9345000, "stock":10, "category":"scooter"}
 ]
