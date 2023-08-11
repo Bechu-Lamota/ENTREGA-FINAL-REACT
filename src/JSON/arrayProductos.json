@@ -1,7 +1,7 @@
 [
 {"id":1, "motor": 100, "imagen": "/asets/NK650.png", "description":"barro", "name":"CF MOTO 650 NK", "price":"4.510.061", "stock":20, "km":"0 km", "año":2023,  "category":"naked"},
 {"id":2, "motor": 50, "imagen": "/asets/Z650.png", "description":"barro", "name":"KAWASAKI Z 650 ABS", "price": "8.0548.00", "stock":5, "km":"0 km", "año":2023,  "category":"naked"},
-{"id":3, "motor": 30, "imagen": "/asets/890R.png", "description":"barro", "name":"KTM DUKE 890 R", "price":"1.6480.960", "stock":2, "km":"0 km", "año":2023,  "category":"naked"},
+{"id":3, "motor": 30, "imagen": "/asets/890R.png", "description":"barro", "name":"KTM DUKE 890 R", "price":"16.480.960", "stock":2, "km":"0 km", "año":2023,  "category":"naked"},
 {"id":4, "motor": 39, "imagen": "/asets/DSX650.jpeg", "description":"barro", "name":"VOGE DSX 650", "price":"5.238.001", "stock":18, "km":"0 km", "año":2023,  "category":"touring"},
 {"id":5, "motor": 98, "imagen": "/asets/VER650.jpeg", "description":"barro", "name":"KAWASAKI VERSYS 650", "price":"12.590.480", "stock":6, "km":"0 km", "año":2023,  "category":"touring"},
 {"id":6, "motor": 47, "imagen": "/asets/TRACER7.jpeg", "description":"barro", "name":"YAMAHA MT 07 TRACER", "price": "15.988.000", "stock":3, "km":"0 km", "año":2023,  "category":"touring"},

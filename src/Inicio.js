@@ -11,13 +11,13 @@ const Productos = () => {
     return (
         <div className="allPageInicio">
             <div className="bodyHeaderInicio">
-                <div className="textBodyHeaderInicio">
+                <div className="txt-bd-hd-in">
                     <h2 className="tituloHeaderInicio">Comprá tu moto 0km con un click</h2>
                     <h3 className="subtituloHeaderInicio">El mercado necesitaba una innovación y vinimos a transformarlo</h3>
                     <p className="parrafoHeaderInicio"> Te garantizamos el mejor precio, calidad, financiación y variedad de productos del mercado en tiempo record.</p>
                     <NavLink className="catalogoHeaderInicio" to='/productos'>CATÁLOGO</NavLink>
                 </div>
-                <div className="imgBodyHeaderInicio">
+                <div className="img-bd-hd-in">
                     <img className="imgBody" src={Handshake} alt="handshake"/>
                 </div>
             </div>
@@ -46,7 +46,7 @@ const Productos = () => {
                 </div>
             </div>
 
-            <div className="articleInicio bg-bl">
+            <div className="articleInicio bg-bl pd-mg">
                  <div className="textArticle">
                     <h2 className="tituloArticleInicio cl-wht-bld">ALQUILÁ</h2>
                     <p className="parrafoArticleInicio cl-wht-md">¿Querés vivir una experiencia inolvidable?</p>
