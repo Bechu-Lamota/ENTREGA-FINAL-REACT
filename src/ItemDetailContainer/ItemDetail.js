@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from 'react-router-dom';
 import ItemCount from './ItemCount';
 
 const ItemDetail = ({item}) => {
@@ -10,14 +11,19 @@ const ItemDetail = ({item}) => {
     return (
         <div>
             <div>
-                <img src={item.imagen2} className="imgDetail" alt={item.category}/>
-                <h2>{item.tipomotor}</h2>
-                <p>{item.motor} CV</p>
+                <div>
+                    <NavLink to='/productos' className=""><i class="bi bi-caret-left-fill"></i>Volver</NavLink>
+                </div>
+                <div>
+                    <img src={item.imagen2} className="imgDetail" alt={item.category}/>
+                    <h2>{item.tipomotor}</h2>
+                    <p>{item.motor} CV</p>
                 <p>$ {item.price}</p>
-            </div>
-            <div>
-                <ItemCount stock={item.stock} inicial={0} onAdd={onAdd}/>
-            </div>
+                </div>
+                <div>
+                    <ItemCount stock={item.stock} inicial={1} onAdd={onAdd}/>
+                </div>
+                </div>
         </div>
     )
 } 
