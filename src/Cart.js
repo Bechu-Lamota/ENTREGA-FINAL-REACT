@@ -9,8 +9,8 @@ const Cart = () => {
     if ( !cart || cart.length === 0) { //De esta manera cart no es undifined
         return (
             <div>
-                <h2> No hay elementos en el carrito </h2>
-                <NavLink to='/productos' className="pd-mg2 cl-bk-bld btn-Link"><i className="bi bi-caret-left-fill"></i>Catalogo </NavLink>
+                <div><NavLink to='/productos' className="pd-mg2 cl-bk-bld btn-Link"><i className="bi bi-caret-left-fill"></i>Catalogo </NavLink></div>
+                <div className="fx-cl-ct bikeCrash"><h2> No hay elementos en el carrito </h2></div>
             </div>
         );
     }
