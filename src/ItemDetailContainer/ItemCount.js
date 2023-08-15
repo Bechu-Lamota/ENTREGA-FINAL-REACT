@@ -15,7 +15,6 @@ const Count = ({inicial, stock, onAdd}) => {
     useEffect(() => {
         variar(parseInt(inicial));
     }, [inicial])
-//No me funcionó.
 
 return (
         <div className='botoneraCount'>
@@ -25,7 +24,7 @@ return (
                 <button disabled={base >= stock} onClick={sumar} className='btnSuma'>Sumar</button>
             </div>
             <div className='btnCart' >
-                <button disabled={base <= 1} onClick={() => onAdd(base)} className='btnAgrCart'>Agregar al carrito</button>
+                <button disabled={base <= 0} onClick={() => onAdd(base)} className='btnAgrCart'>Agregar al carrito</button>
             </div>
         </div>
     )

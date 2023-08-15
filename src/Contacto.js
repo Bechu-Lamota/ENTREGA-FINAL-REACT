@@ -23,7 +23,7 @@ function FormExample() {
         <div className="cntInd">
             <div className="bg-wh">
                 <div className="cntInd cntReemb">
-                    <h2 className="cnt-Bk cl-bk-bld btn-Link"><i class="bi bi-clipboard-minus ic-ct"></i> Reembolso</h2>
+                    <h2 className="cnt-Bk cl-bk-bld btn-Link"><i className="bi bi-clipboard-minus ic-ct"></i> Reembolso</h2>
                     <p>Existirá <strong>reembolso</strong> siempre que se determine que un cargo deba ser revertido. En este caso, las cantidades abonadas por el <strong>Usuario</strong> serán reintegradas en su totalidad. El cliente recibirá en su cuenta o en el extracto de su tarjeta de crédito el monto pagado por la compra de un determinado bien, bienes o servicio.</p>
                     <p>Se debe tener en cuenta que, ante un reembolso:</p>
                     <ul>
@@ -33,7 +33,7 @@ function FormExample() {
                      </ul>
                 </div>
                 <div className="cntInd cntCancel">
-                    <h2 className="cnt-Bk cl-bk-bld btn-Link"><i class="bi bi-clipboard2-x ic-ct"></i> Cancelación</h2>
+                    <h2 className="cnt-Bk cl-bk-bld btn-Link"><i className="bi bi-clipboard2-x ic-ct"></i> Cancelación</h2>
                     <p>Se procedera a <strong>cancelar</strong> todas aquellas transacciones que no se puedan corroborar o aprobar por algún motivo. En este caso, considerando que la transacción no fue procesada y <strong>NewBK</strong> no recibió monto alguno, la compra se cancelará y sin incurrir en cargo alguno.</p>
                     <p>Antes de cancelar la compra, se debe tener en cuenta:</p>
                     <ul>
@@ -44,7 +44,7 @@ function FormExample() {
             </div>
         </div>
         <div className="cntInd">
-             <h2 className="cnt-Bk cl-bk-bld btn-Link"><i class="bi bi-envelope-exclamation ic-ct"></i> Boton de Arrepentimiento</h2>
+             <h2 className="cnt-Bk cl-bk-bld btn-Link"><i className="bi bi-envelope-exclamation ic-ct"></i> Boton de Arrepentimiento</h2>
              <p> Dentro del plazo de 24hs, analizaremos su solicitud y le brindaremos una respuesta.</p>
              <div className="bg-wh txtInd">
                 <Form noValidate validated={validated} onSubmit={handleSubmit} className="txtInd">
@@ -126,7 +126,7 @@ function FormExample() {
         <div className="footer">
             <div className="bodyFooter">
                 <div className="lineBodyFooter">
-                    <p class="derechosReservados"> © 2023, NewBK S.A.S. - Todos los derechos reservados | Juana Manso 1460, C1107, CABA</p>
+                    <p className="derechosReservados"> © 2023, NewBK S.A.S. - Todos los derechos reservados | Juana Manso 1460, C1107, CABA</p>
                     <div className="listBodyFooter">
                         <NavLink to='/otros' className="trasnparentButton">Términos y Condiciones</NavLink>
                         <NavLink to='/otros' className="trasnparentButton">Políticas de Privacidad</NavLink>
