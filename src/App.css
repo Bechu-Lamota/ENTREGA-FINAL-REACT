@@ -41,6 +41,15 @@ div, h1, h2, h3, h4, h5, h6, p {
   .grC{
     grid-area: a;
   }
+  .bigLtre {
+    font-size: 40px;
+  }
+}
+
+.crclRed {
+  padding: 5px;
+  font-size: 19px;
+  margin: 5px;
 }
 
 .btn-Link {
@@ -53,8 +62,13 @@ div, h1, h2, h3, h4, h5, h6, p {
   color:#003882;
 }
 
+.boxbtn {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
 .botoneraCount {
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,33 +76,43 @@ div, h1, h2, h3, h4, h5, h6, p {
 
 .btnSumaResta {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   margin: 10px;
 }
 
 .visualCount {
+  display: flex;
   margin: 10px;
+  justify-content: center;
+  text-align: center;
 }
 
-.btnResta {
-  background-color: beige;
-  border: 2px solid;
+.btn {
+  display: flex;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: rgb(116, 116, 116);
+  border: 2px solid rgb(71, 71, 71);
   border-radius: 10px;
-  color: rgb(164, 164, 146);
-}
-
-.btnSuma {
-  background-color: rgb(93, 209, 81);
-  border: 2px solid;
-  border-radius: 10px;
-  color: rgb(53, 115, 47);
+  color: rgb(71, 71, 71);
+  justify-content: center;
 }
 
 .btnAgrCart {
-  background-color: burlywood;
+  background-color: #A7BFE8;
   border: 2px solid;
   border-radius: 10px;
-  color: blueviolet;
+  color: #01234f;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /*INICIO*/
@@ -346,7 +370,8 @@ div, h1, h2, h3, h4, h5, h6, p {
 
 .añoKm {
   display: flex;
-  padding: 10px;
+  padding: 5px;
+  justify-content: center;
 }
 
 .kmItem {
@@ -484,6 +509,14 @@ div, h1, h2, h3, h4, h5, h6, p {
   margin: 50px;
 }
 
+.pd-mg2 {
+  margin: 20px;
+}
+
+.pd-20px {
+  padding: 20px;
+}
+
 .mg-bt {
   margin: auto !important;
 }
@@ -545,6 +578,7 @@ div, h1, h2, h3, h4, h5, h6, p {
   grid-area: H;
     padding: 10px;
 }
+
 @media screen and (max-width: 780px) {
 .flexForm {
   display: flex;
@@ -558,4 +592,68 @@ div, h1, h2, h3, h4, h5, h6, p {
 .añoKm {
   justify-content: center;
 }
+}
+
+.jf-ct {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.bg-btom-blck {
+  border-bottom: 1px solid #01234f;
+}
+
+.bg-gy-bd {
+  border-bottom: 2px solid linear-gradient(90deg, rgba(231,231,231,1) 0%, rgba(235,235,235,1) 35%, rgba(251,251,251,1) 100%);
+}
+
+.fx-cl-ct {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.bg-gy-bd2 {
+  margin-left: 2rem;
+}
+
+.bd-rd20 {
+  margin: 20px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+@media screen and (max-width: 780px) {
+  .jf-ct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .mg-tp {
+    margin-top: 20px;
+  }
+
+  .jf-ct-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.btnEl {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #e1e9fe;
+  background-color: #275ada;
+  border: 2.5px #0b3db9 solid;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: auto;
+  padding: 2px 70px;
 }

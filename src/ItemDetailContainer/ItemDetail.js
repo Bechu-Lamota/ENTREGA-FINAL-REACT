@@ -15,21 +15,23 @@ const ItemDetail = ({item}) => {
     }
 
     return (
-        <div>
-            <div>
-                <div>
-                    <NavLink to='/productos'><i className="bi bi-caret-left-fill"></i>Volver</NavLink>
-                </div>
-                <div>
-                    <img src={item.imagen2} className="imgDetail" alt={item.category}/>
-                    <h2>{item.tipomotor}</h2>
-                    <p>{item.motor} CV</p>
-                    <p>$ {formPrice}</p>
-                </div>
-                <div>
-                    <ItemCount stock={item.stock} inicial={1} onAdd={onAdd}/>
-                </div>
-                </div>
+        <div className="bg-gy">
+                    <NavLink to='/productos' className="pd-mg2 cl-bk-bld btn-Link"><i className="bi bi-caret-left-fill"></i>Volver</NavLink>
+                <div className="jf-ct bg-wh pd-mg2 mg-tp">
+                    <img src={item.imagen2} className="bd-rd20 bg-gy-bd" alt={item.category}/>
+                    <div className="fx-cl-ct bg-gy-bd2">
+                        <h1 className="">{item.name}</h1>
+                        <p className="">{item.tipomotor}</p>
+                        <div className="jf-ct jf-ct-row">
+                            <h5 className="pd-mg2">{item.motor} CV</h5>
+                            <h5 className="pd-mg2">Condición: {item.km}</h5>
+                        </div>
+                        <h3 className="">$ {formPrice}</h3>
+                        <div className="boxbtn">
+                            <ItemCount stock={item.stock} inicial={1} onAdd={onAdd}/>
+                        </div>
+                    </div>
+        </div>
         </div>
     )
 } 

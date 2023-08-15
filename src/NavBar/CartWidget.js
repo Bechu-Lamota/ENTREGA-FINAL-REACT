@@ -6,8 +6,8 @@ const CartWidget = () => {
 
     return (
         <div>
-            <i className="bi bi-basket"></i>
-            <span>{totalProductos() || ''}</span>
+            <i className="bi bi-basket bigLtre"></i>
+            <span className="crclRed">{totalProductos() || ''}</span>
         </div>
     );
 }

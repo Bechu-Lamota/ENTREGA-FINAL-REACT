@@ -19,9 +19,9 @@ const Count = ({inicial, stock, onAdd}) => {
 return (
         <div className='botoneraCount'>
             <div className='btnSumaResta'>
-                <button disabled={base <= 1} onClick={restar} className='btnResta'>Restar</button>
+                <button disabled={base <= 0} onClick={restar} className='btn'><h1>-</h1></button>
                 <h3 className='visualCount'> {base} </h3>
-                <button disabled={base >= stock} onClick={sumar} className='btnSuma'>Sumar</button>
+                <button disabled={base >= stock} onClick={sumar} className='btn'><h1>+</h1></button>
             </div>
             <div className='btnCart' >
                 <button disabled={base <= 0} onClick={() => onAdd(base)} className='btnAgrCart'>Agregar al carrito</button>

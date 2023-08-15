@@ -10,7 +10,7 @@ const Cart = () => {
         return (
             <div>
                 <h2> No hay elementos en el carrito </h2>
-                <NavLink to='/productos'> Catalogo </NavLink>
+                <NavLink to='/productos' className="pd-mg2 cl-bk-bld btn-Link"><i className="bi bi-caret-left-fill"></i>Catalogo </NavLink>
             </div>
         );
     }
@@ -18,14 +18,11 @@ const Cart = () => {
     const formatoTotalPrecio = totalPrecio().toLocaleString().replace(/,/g, '.');
 
     return (
-        <div>
-            <div>
-                {
-                    cart.map(product => <ItemCart key={product.id} product={product} />)
-                }
-                <p> Total: $ {formatoTotalPrecio} </p>
+        <div className="bg-gy">
+            <div className="fx-cl-ct">
+                {cart.map(product => <ItemCart key={product.id} product={product} />)}
             </div>
-            <h2> Acá encontraremos el listado de nuestra seleccion </h2>
+            <p className="jf-ct cl-bk-bld subtituloHeaderInicio"> Total: $ {formatoTotalPrecio} </p>
             <div className="bodyFooter">
                 <div className="lineBodyFooter">
                     <p className="derechosReservados"> © 2023, NewBK S.A.S. - Todos los derechos reservados | Juana Manso 1460, C1107, CABA</p>

@@ -13,14 +13,14 @@ const ItemCart = ({ product }) => {
         const formPrice = parseFloat(product.price).toLocaleString('en').replace(/,/g, '.');
 
     return (
-        <div>
+        <div className="pd-20px jf-ct bg-btom-blck bd-rd20 bg-gd-rd-white">
             <img src={product.imagen2} width={300} height={200} alt={product.name} />
             <div>
                 <p> Producto: {product.name}</p>
                 <p> Cantidad: {product.cantidad}</p>
                 <p> Precio: $ {formPrice}</p>
                 <p> Subtotal: $ {formatPrecio(Subtotal)}</p>
-                <button onClick={() => removeProduct(product.id)}> Eliminar </button>
+                <button className="btnEl" onClick={() => removeProduct(product.id)}> Eliminar </button>
             </div>
         </div>
     )
