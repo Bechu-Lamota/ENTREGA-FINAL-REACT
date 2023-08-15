@@ -8,9 +8,9 @@ const Otros = () => {
 
     
     return (
-        <div className="pd-mg">
-            <div className="">
-                <h2 className="pd-mg pd-acc"><i class="bi bi-wrench"></i> Terminos y Condiciones</h2>
+        <div className="bg-gy">
+            <div className="pd-50px">
+                <h2 className="pd-50px pd-acc"><i class="bi bi-wrench"></i> Terminos y Condiciones</h2>
             </div>
             <div className="textArticle pd-mg">
             <Accordion defaultActiveKey="0" className="pd-acc">

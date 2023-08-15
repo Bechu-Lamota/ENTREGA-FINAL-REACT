@@ -516,6 +516,9 @@ div, h1, h2, h3, h4, h5, h6, p {
 .pd-20px {
   padding: 20px;
 }
+.pd-50px {
+  padding-top: 50px;
+}
 
 .mg-bt {
   margin: auto !important;
