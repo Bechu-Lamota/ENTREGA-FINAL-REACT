@@ -12,7 +12,7 @@ const Item = ({item}) => {
             </div>
             <div className="txtCenter">
                 <div className="añoKm">
-                    <h4 className="pd-mg2 kmItem cl-bk-lig"> {item.km} </h4>
+                    <h4 className="pd-mg2 kmItem cl-bk-lig"> {item.km} Km</h4>
                     <h4 className="pd-mg2 añoItem cl-bk-lig"> {item.año} </h4>
                 </div>
                 <p className="nameItem cl-bk-md"> {item.name} </p>

@@ -2,7 +2,7 @@ import React from "react";
 import {NavLink} from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import arrayProductos from "../JSON/arrayProductos.json";
+import { getFirestore, collection, getDocs } from 'firebase/firestore'
 import ItemList from "./ItemList"
 
 const Productos = () => {
@@ -10,19 +10,11 @@ const Productos = () => {
     const   {id} = useParams();
 
     useEffect(() => {
-        const fetchData = async() => {
-            try {
-                const data = await new Promise((resolve) =>{
-                    setTimeout(()=>{
-                        resolve(id ? arrayProductos.filter(item => item.category === id) : arrayProductos)
-                    }, 1000);
-                });
-                setItem(data);
-            } catch(error){
-                console.log('Error:', error);
-            }
-        };
-        fetchData();
+        const querydb = getFirestore();
+        const queryCollection = collection(querydb, 'productos');
+        getDocs(queryCollection)
+        .then(res => setItem(res.docs.map(p => ({id: p.id, ...p.data()}))))
+
     }, [id])
 
  

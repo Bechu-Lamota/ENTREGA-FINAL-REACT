@@ -24,7 +24,7 @@ const ItemDetail = ({item}) => {
                         <p className="">{item.tipomotor}</p>
                         <div className="jf-ct jf-ct-row">
                             <h5 className="pd-mg2">{item.motor} CV</h5>
-                            <h5 className="pd-mg2">Condición: {item.km}</h5>
+                            <h5 className="pd-mg2">Condición: {item.km} Km</h5>
                         </div>
                         <h3 className="">$ {formPrice}</h3>
                         <div className="boxbtn">

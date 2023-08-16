@@ -660,3 +660,15 @@ div, h1, h2, h3, h4, h5, h6, p {
   margin: auto;
   padding: 2px 70px;
 }
+
+.boxFiltro {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.fx-cl-top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
