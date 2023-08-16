@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Otros = () => {
 
-    
     return (
         <div className="bg-gy">
             <div className="pd-50px">
