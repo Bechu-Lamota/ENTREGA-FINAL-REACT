@@ -35,7 +35,7 @@ const Cart = () => {
             </div>
             <p className="jf-ct cl-bk-bld subtituloHeaderInicio"> Total: $ {formatoTotalPrecio} </p>
             <div className="botoneraCount">
-                <NavLink to='/checkout' className=''>Finalizar compra</NavLink>
+                <NavLink to='/checkout' className='btnAgrCart pd-mg2 tx-dc'>Finalizar compra</NavLink>
             </div>
             <div className="bodyFooter">
                 <div className="lineBodyFooter">

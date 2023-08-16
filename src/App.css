@@ -513,6 +513,9 @@ div, h1, h2, h3, h4, h5, h6, p {
 .pd-mg2 {
   margin: 20px;
 }
+.pd-max {
+  padding: 100px;
+}
 
 .pd-20px {
   padding: 20px;
@@ -684,4 +687,17 @@ div, h1, h2, h3, h4, h5, h6, p {
 
 .bikeCrash2 {
   margin-bottom: 200px;
+}
+
+.pd-mg-lf-rg {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.tx-dc {
+  text-decoration: none;
+}
+
+.cl-blue {
+  color: #0049a9;
 }

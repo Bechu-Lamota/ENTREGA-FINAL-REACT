@@ -9,6 +9,7 @@ const Checkout = () => {
     const [buyer, setBuyer] = useState({
         Nombre: "",
         Email: "",
+        Repite: "",
         Telefono: "",
         Domicilio: ""
     });
@@ -38,36 +39,44 @@ const Checkout = () => {
 
     const formPrice = parseFloat(totalPrecio()).toLocaleString('en').replace(/,/g, '.');
 
+    const cuotaFija = (totalPrecio() / 24) * 2.40;
+    const formPriceCuotaFija = parseFloat(cuotaFija).toLocaleString('en').replace(/,/g, '.');
     return (
         <div className="bg-gy">
             <div>
-            <div>
-                <div>
-                    <h3>Datos de su compra</h3>
+            <div className="pd-20x fx-cl-ct">
+                <div className="pd-mg2">
+                    <h2 className="pd-20px cl-bk-md bg-btom-blck">DATOS DE SU COMPRA:</h2>
                 </div>
-                <div>
+                <div className="pd-mg-lf-rg">
                     {cart.map(product => <ItemCart key={product.id} product={product} />)}
-                    <p>$ {formPrice}</p>
+                </div>
+                <div className="pd-mg">
+                    <h2 className="btn-Link subtituloHeaderInicio "> FINAL $ {formPrice}</h2>
+                    <h2 className="btn-Link parrafoHeaderInicio "> En 24 cuotas fijas de $ {formPriceCuotaFija}</h2>
                 </div>
             </div>
-                <div>
-                    <h2>COMPLETE LOS CAMPOS PARA FINALIZAR LA COMPRA </h2>
+            <div className="pd-20x fx-cl-ct cntInd">
+                <div className="bg-wh">
+                <div className="pd-20x fx-cl-ct">
+                    <h2 className="pd-20px cl-bk-md bg-btom-blck pd-mg2">COMPLETE LOS CAMPOS PARA FINALIZAR LA COMPRA </h2>
                 </div>
-                <div>
-                    {!orderId && <form onSubmit={handleSubmit}>
-                        <input type="text" name="Nombre" placeholder="Nombre" value={buyer.Nombre} onChange={handleInputChange} required></input>
-                        <input type="email" name="Email" placeholder="Email" value={buyer.Email} onChange={handleInputChange} required></input>
-                        <input type="number" name="Telefono" placeholder="Telefono" value={buyer.Telefono} onChange={handleInputChange} required></input>
-                        <input type="text" name="Domicilio" placeholder="Domicilio" value={buyer.Domicilio} onChange={handleInputChange} required></input>
-                        <input type="submit" value="Comprar" />
+                <div className="fx-cl-ct">
+                    {!orderId && <form className="fx-cl-ct pd-max" onSubmit={handleSubmit}>
+                        <input className="pd-mg2" type="text" name="Nombre" placeholder="Nombre*" value={buyer.Nombre} onChange={handleInputChange} required></input>
+                        <input className="pd-mg2" type="email" name="Email" placeholder="Email*" value={buyer.Email} onChange={handleInputChange} required></input>
+                        <input className="pd-mg2" type="number" name="Telefono" placeholder="Telefono*" value={buyer.Telefono} onChange={handleInputChange} required></input>
+                        <input className="pd-mg2" type="text" name="Domicilio" placeholder="Domicilio*" value={buyer.Domicilio} onChange={handleInputChange} required></input>
+                        <input className="pd-mg2" type="submit" value="Comprar" />
                     </form>
                     }
                     {orderId && <>
-                    <h1> Felicitaciones tu compra se realizo con éxito</h1>
-                    <h3> Tu numero de seguimiento es: {orderId}</h3>
+                    <h1 className="pd-20x cl-bk-md"> Felicitaciones tu compra se realizo con éxito</h1>
+                    <h3 className="pd-20px"> Tu numero de seguimiento es: <h5 className="cl-blue">{orderId}</h5></h3>
                     </>}
                 </div>
-
+                </div>
+            </div>
             </div>
             <div className="bodyFooter">
                 <div className="lineBodyFooter">
