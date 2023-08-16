@@ -10,7 +10,17 @@ const Cart = () => {
         return (
             <div>
                 <div><NavLink to='/productos' className="pd-mg2 cl-bk-bld btn-Link"><i className="bi bi-caret-left-fill"></i>Catalogo </NavLink></div>
-                <div className="fx-cl-ct bikeCrash"><h2> No hay elementos en el carrito </h2></div>
+                <div className="fx-cl-ct bikeCrash bikeCrash2"><h2> No hay elementos en el carrito </h2></div>
+                <div className="bodyFooter">
+                <div className="lineBodyFooter">
+                    <p className="derechosReservados"> © 2023, NewBK S.A.S. - Todos los derechos reservados | Juana Manso 1460, C1107, CABA</p>
+                    <div className="listBodyFooter">
+                        <NavLink to='/otros' className="trasnparentButton">Términos y Condiciones</NavLink>
+                        <NavLink to='/otros' className="trasnparentButton">Políticas de Privacidad</NavLink>
+                        <NavLink to='/contacto' className="trasnparentButton">Botón de arrepentimiento</NavLink>
+                    </div>
+                </div>
+            </div>
             </div>
         );
     }
@@ -24,6 +34,9 @@ const Cart = () => {
                 {cart.map(product => <ItemCart key={product.id} product={product} />)}
             </div>
             <p className="jf-ct cl-bk-bld subtituloHeaderInicio"> Total: $ {formatoTotalPrecio} </p>
+            <div className="botoneraCount">
+                <NavLink to='/checkout' className=''>Finalizar compra</NavLink>
+            </div>
             <div className="bodyFooter">
                 <div className="lineBodyFooter">
                     <p className="derechosReservados"> © 2023, NewBK S.A.S. - Todos los derechos reservados | Juana Manso 1460, C1107, CABA</p>

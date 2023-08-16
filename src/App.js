@@ -10,6 +10,7 @@ import Cart from  './Cart';
 import Productos from  './ItemListContainer/ItemListContainer';
 import Detalle from './ItemDetailContainer/ItemDetailContainer';
 import CartProvider from './Context/CartContext';
+import Checkout from './Checkout/Checkout';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/otros' element={<Otros/>}/>
         <Route path='*' element={<Error/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
       </Routes>
       </CartProvider>
 
