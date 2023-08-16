@@ -16,8 +16,8 @@ const ItemDetail = ({item}) => {
 
     return (
         <div className="bg-gy">
-                    <NavLink to='/productos' className="pd-mg2 cl-bk-bld btn-Link"><i className="bi bi-caret-left-fill"></i>Volver</NavLink>
-                <div className="jf-ct bg-wh pd-mg2 mg-tp">
+                    <NavLink to='/productos' className="pd-mg2 cl-bk-bld btn-Link "><i className="bi bi-caret-left-fill"></i>Volver</NavLink>
+                <div className="jf-ct bg-wh pd-mg2 mg-tp jf-ct-cl">
                     <img src={item.imagen2} className="bd-rd20 bg-gy-bd" alt={item.category}/>
                     <div className="fx-cl-ct bg-gy-bd2">
                         <h1 className="">{item.name}</h1>

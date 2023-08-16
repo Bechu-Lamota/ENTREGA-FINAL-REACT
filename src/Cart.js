@@ -19,6 +19,7 @@ const Cart = () => {
 
     return (
         <div className="bg-gy">
+            <NavLink to='/productos' className="pd-mg2 cl-bk-bld btn-Link"><i className="bi bi-caret-left-fill"></i>Listado</NavLink>
             <div className="fx-cl-ct">
                 {cart.map(product => <ItemCart key={product.id} product={product} />)}
             </div>

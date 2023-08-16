@@ -350,8 +350,9 @@ div, h1, h2, h3, h4, h5, h6, p {
 
 /*LIST*/
 .boxItemList {
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  background-color: #F4F4F5;
 }
 .itemList {
   display: flex;
@@ -646,6 +647,14 @@ div, h1, h2, h3, h4, h5, h6, p {
     text-align: center;
   }
 }
+@media screen and (max-width: 900px) {
+  .jf-ct-cl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
 
 .btnEl {
   text-decoration: none;
@@ -667,8 +676,8 @@ div, h1, h2, h3, h4, h5, h6, p {
     margin-right: 100px;
 }
 
-.fx-cl-top {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.bg-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
 }
